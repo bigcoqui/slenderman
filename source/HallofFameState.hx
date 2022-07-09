@@ -89,6 +89,10 @@ class HallofFameState extends MusicBeatState
 		hallHeads.scale.y = 0.5;
 		add(hallHeads);
 		daAngle(-10);
+
+		#if android
+		addVirtualPad(NONE, A_B);
+		#end
 	}
 
 	override function update(elapsed:Float)
