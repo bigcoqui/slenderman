@@ -134,7 +134,6 @@ class MusicBeatState extends FlxUIState
 	}
 		
 		super.destroy();
-	}
 
 	override function create() {
 		var skip:Bool = FlxTransitionableState.skipNextTransOut;
