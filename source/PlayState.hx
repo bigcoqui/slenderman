@@ -1961,7 +1961,7 @@ class PlayState extends MusicBeatState
 		}
 
 		#if android
-		androidc.visible = true;
+		androidControls.visible = true;
 		#end
 
 		inCutscene = false;
@@ -3650,7 +3650,7 @@ class PlayState extends MusicBeatState
 		}
 
 		#if android
-		androidc.visible = false;
+		androidControls.visible = false;
 		#end
 		timeBarBG.visible = false;
 		timeBar.visible = false;
