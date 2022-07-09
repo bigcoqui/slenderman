@@ -711,7 +711,7 @@ class Controls extends FlxActionSet
 		}
 	}
 
-  #if !android
+	#if !android
 	public function bindKeys(control:Control, keys:Array<FlxKey>)
 	{
 		var copyKeys:Array<FlxKey> = keys.copy();
@@ -748,7 +748,7 @@ class Controls extends FlxActionSet
 		inline forEachBound(control, (action, state) -> addKeys(action, keys, state));
 		#else
 		forEachBound(control, function(action, state) addKeys(action, keys, state));
-		#end	
+		#end
 	}
 
 	public function unbindKeys(control:Control, keys:Array<FlxKey>)
@@ -757,7 +757,7 @@ class Controls extends FlxActionSet
 		inline forEachBound(control, (action, _) -> removeKeys(action, keys));
 		#else
 		forEachBound(control, function(action, _) removeKeys(action, keys));
-		#end		
+		#end
 	}	
 	#end
 
