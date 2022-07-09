@@ -63,7 +63,7 @@ class MainMenuState extends MusicBeatState
         }
 
         #if MODS_ALLOWED
-        for (i in FileSystem.readDirectory("assets/images/menushit")) {
+        for (i in FileSystem.readDirectory(SUtil.getPath() + "assets/images/menushit")) {
             if (i.startsWith("page") && i.endsWith(".png")) {
                 var num = Std.parseInt(i.substring(4, i.length - 4).trim());
                 if (num != null && num > quant)
