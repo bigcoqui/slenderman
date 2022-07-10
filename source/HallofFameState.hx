@@ -91,7 +91,7 @@ class HallofFameState extends MusicBeatState
 		daAngle(-10);
 
 		#if android
-		addVirtualPad(NONE, A_B);
+		addVirtualPad(LEFT_RIGHT, A_B);
 		#end
 	}
 
@@ -112,7 +112,7 @@ class HallofFameState extends MusicBeatState
 
 		if (canChange)
 		{
-			if (FlxG.keys.justPressed.RIGHT)
+			if (controls.RIGHT_P)
 			{
 				hasClicked = true;
 				FlxG.sound.play(Paths.sound('click-start'));
@@ -122,7 +122,7 @@ class HallofFameState extends MusicBeatState
 				else
 					selectedP++;
 			}
-			if (FlxG.keys.justPressed.LEFT)
+			if (controls.LEFT_P)
 			{
 				hasClicked = true;
 				FlxG.sound.play(Paths.sound('click-start'));
