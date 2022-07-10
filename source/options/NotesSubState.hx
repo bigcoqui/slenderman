@@ -89,6 +89,11 @@ class NotesSubState extends MusicBeatSubstate
 		add(hsbText);
 
 		changeSelection();
+
+		#if android
+		addVirtualPad(LEFT_FULL, A_B);
+		addPadCamera();
+		#end
 	}
 
 	var changingNote:Bool = false;
