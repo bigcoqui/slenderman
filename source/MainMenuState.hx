@@ -116,7 +116,7 @@ class MainMenuState extends MusicBeatState
                 select(-1);
             if (controls.UI_DOWN_P)
                 select(1);
-            if (FlxG.keys.justPressed.ENTER) {
+            if (controls.ACCEPT) {
                 switch (options[curOption]) {
                     case 'freeplay':
                         MusicBeatState.switchState(new SlenderFP());
