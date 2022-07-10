@@ -137,7 +137,6 @@ class AndroidControlsSubState extends FlxSubState
 
 			flixel.addons.transition.FlxTransitionableState.skipNextTransOut = true;
 			FlxG.resetState();
-			save();
 			MusicBeatState.switchState(new options.OptionsState());
 		}
 
