@@ -112,7 +112,7 @@ class HallofFameState extends MusicBeatState
 
 		if (canChange)
 		{
-			if (controls.RIGHT_P)
+			if (controls.UI_RIGHT_P)
 			{
 				hasClicked = true;
 				FlxG.sound.play(Paths.sound('click-start'));
@@ -122,7 +122,7 @@ class HallofFameState extends MusicBeatState
 				else
 					selectedP++;
 			}
-			if (controls.LEFT_P)
+			if (controls.UI_LEFT_P)
 			{
 				hasClicked = true;
 				FlxG.sound.play(Paths.sound('click-start'));
@@ -135,7 +135,7 @@ class HallofFameState extends MusicBeatState
 
 			if(hasClicked)
 			{
-				if (FlxG.keys.justReleased.LEFT || FlxG.keys.justReleased.RIGHT)
+				if (controls.UI_LEFT_P || controls.UI_RIGHT_P)
 				{
 					hasClicked = false;
 					canChange = false;
