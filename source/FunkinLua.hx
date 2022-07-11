@@ -519,6 +519,7 @@ class FunkinLua {
 		});
 
 
+		#if MODS_ALLOWED
 		Lua_helper.add_callback(lua, "addLuaScript", function(luaFile:String, ?ignoreAlreadyRunning:Bool = false) { //would be dope asf.
 			var cervix = luaFile + ".lua";
 			if(luaFile.endsWith(".lua"))cervix=luaFile;
@@ -610,6 +611,7 @@ class FunkinLua {
 			}
 			luaTrace("Script doesn't exist!");
 		});
+		#end
 
 		Lua_helper.add_callback(lua, "loadSong", function(?name:String = null, ?difficultyNum:Int = -1) {
 			if(name == null || name.length < 1)
