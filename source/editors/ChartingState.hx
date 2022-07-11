@@ -908,7 +908,7 @@ class ChartingState extends MusicBeatState
 		#if LUA_ALLOWED
 		var directories:Array<String> = [];
 
-		#if MODS_ALLOWED
+		/*#if MODS_ALLOWED
 		directories.push(Paths.mods('custom_notetypes/'));
 		directories.push(Paths.mods(Paths.currentModDirectory + '/custom_notetypes/'));
 		for(mod in Paths.getGlobalMods())
@@ -932,7 +932,7 @@ class ChartingState extends MusicBeatState
 				}
 			}
 		}
-		#end
+		#end*/
 
 		for (i in 1...displayNameList.length) {
 			displayNameList[i] = i + '. ' + displayNameList[i];
