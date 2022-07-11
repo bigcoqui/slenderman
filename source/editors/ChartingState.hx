@@ -905,7 +905,7 @@ class ChartingState extends MusicBeatState
 			key++;
 		}
 
-		var directories:Array<String> = [];
+		//var directories:Array<String> = [];
 
 		/*#if MODS_ALLOWED
 		directories.push(Paths.mods('custom_notetypes/'));
