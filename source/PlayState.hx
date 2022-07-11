@@ -1048,6 +1048,7 @@ class PlayState extends MusicBeatState
                                 luaArray.push(new FunkinLua(Asset2File.getPath(luaToLoad)));
                         }
                 }
+    #end
 		noteTypeMap.clear();
 		noteTypeMap = null;
 		eventPushedMap.clear();
