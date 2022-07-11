@@ -905,7 +905,6 @@ class ChartingState extends MusicBeatState
 			key++;
 		}
 
-		#if LUA_ALLOWED
 		var directories:Array<String> = [];
 
 		/*#if MODS_ALLOWED
